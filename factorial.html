@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Factorial</title>
+</head>
+<body>
+    <script>
+        function factorial(n) {
+            var total = 1;
+            for (var i = 0; i < n; i = i + 1) {
+                total = total * (n - i);
+
+                console.log("Current i is: " + i);
+                console.log("Current value of total is: " + total);
+            }
+        return total;
+        }
+
+        var userstring = prompt("Number please...");
+        var usernum = parseInt(userstring, 10);
+
+        console.log(usernum + "! is" + factorial(usernum));
+
+
+    </script>
+
+</body>
+</html>
